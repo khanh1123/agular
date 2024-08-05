@@ -1,0 +1,61 @@
+.main-image {
+    margin-bottom: 20px;
+    position: relative;
+    height: 350px;
+}
+.main-image img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.main-image p {
+    position: relative;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Số dòng giới hạn */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.thumbnails {
+    gap: 10px;
+    height: 350px;  
+    padding: 10px 10px;
+}
+.thumbnails img {
+    width: 100px;
+    height: 80px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.thumbnails p {
+    text-align: left;
+    font-size: 14px;
+    padding: 5px;
+    margin-bottom: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Số dòng giới hạn */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70%;
+}
+.thumbnails img:hover {
+    border: 2px solid #000;
+}
+.thumbnails .d-flex {
+    margin-top: -5px;
+    padding-bottom: 15px;
+}

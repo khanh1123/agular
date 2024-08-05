@@ -1,0 +1,16 @@
+
+.imgsmallinthirdrow {
+    width: 24%;
+    height: 70px;
+    border-radius: 10px;
+}
+.psmallinthirdrow {
+    width: 74%;
+    margin-left: 10px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Số dòng giới hạn */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

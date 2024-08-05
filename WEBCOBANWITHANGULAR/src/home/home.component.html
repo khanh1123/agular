@@ -1,0 +1,11 @@
+<app-header></app-header>
+<app-content
+  [sliderTop]="sliderTop"
+  [selectedImage]="selectCurrentImage"
+  (handleGetCurrent)="getCurrentImage($event)"
+  [sliderMaxFive]="sliderMaxFive"
+  [sliderMaxSix]="sliderMaxSix"
+  [news]="news"
+  [events]="events"
+></app-content>
+<app-footer></app-footer>

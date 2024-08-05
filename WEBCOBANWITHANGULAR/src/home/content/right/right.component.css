@@ -1,0 +1,36 @@
+/* ++++++++++++++++++++++++++++++++SB Row++++++++++++++++++++++++++++++++ */
+
+/* ++++++++++++++++++++++++++++++++End-SB Row++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++Thirst SB++++++++++++++++++++++++++++++++ */
+.banner1 {
+    display: flex;
+    align-items: center;
+    background-color: #f3c85b; /* Light orange color */
+    color: #ffffff; /* Golden color for the text */
+    font-family: Arial, sans-serif;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.133);
+    width: 100%;
+}
+.banner1::before {
+    width: 5px;
+    height: 100%;
+    background-color: #DAA520; /* Golden color for the side bar */
+    margin-right: 10px;
+    width: 100%;
+}
+.banner1 h3 {
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 auto;
+    padding-left: 5px;
+}
+.banner1 i {
+    text-align: right;
+} 
+
+/* ++++++++++++++++++++++++++++++++End-Thirst SB++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++Fourth SB++++++++++++++++++++++++++++++++ */
+
+/* ++++++++++++++++++++++++++++++++End-Fourth SB++++++++++++++++++++++++++++++++ */

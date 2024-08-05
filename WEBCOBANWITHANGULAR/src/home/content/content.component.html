@@ -1,0 +1,37 @@
+<div class="container1 my-4">
+  <div class="row">
+    <!--left-->
+    <div class="col-lg-9">
+      <app-left
+        [sliderTop]="sliderTop"
+        [selectedImage]="selectedImage"
+        (getCurrentImage)="handleGetCurrentImage($event)"
+        [sliderMaxFive]="sliderMaxFive"
+        [news]="news"
+        [events]="events"
+      ></app-left>
+    </div>
+
+    <!--right-->
+    <div class="col-lg-3">
+      <app-right></app-right>
+    </div>
+
+    <!-- ---------------------------------------------------------End of SB--------------------------------------------------------- -->
+  </div>
+  <!-- ---------------------------------------------------------Last content--------------------------------------------------------- -->
+  <div class="banner1 mt-3 mb-3 d-flex">
+    <h3>XÂY DỰNG DÂN TỘC</h3>
+    <i class="bi bi-brightness-alt-low-fill"></i>
+  </div>
+  <div class="row boxcrs1 mt-2 m-0">
+    <!-- <swiper-container style="padding: 0 0;" class="mySwiper" pagination="true" pagination-clickable="true" space-between="20" slides-per-view="6"> -->
+    <app-carosel
+      [items1]="sliderMaxSix"
+      [maxSlider]="6"
+      [isTitle]="isTitle"
+    ></app-carosel>
+    <!-- </swiper-container> -->
+  </div>
+  <!-- ---------------------------------------------------------End of Main--------------------------------------------------------- -->
+</div>

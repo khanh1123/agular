@@ -1,0 +1,49 @@
+<div id="body">
+    <div id="body1">
+    <form class="wrapper" id="registrationForm" (ngSubmit)="onRegister()">
+    <h2 style="text-align: center;">Đăng ký tài khoản</h2>
+    <div>
+        <label for="username"></label>
+        <input type="text" id="username" name="username" [(ngModel)]="username"placeholder="Tên đăng nhập" required>
+        <div *ngIf="usernameError" class="error">{{ usernameError }}</div>
+    </div>
+    <div>
+        <label for="email"></label>
+        <input type="email" id="email" name="email" [(ngModel)]="email"placeholder="Địa chỉ Email" required >
+        <div *ngIf="emailError" class="error">{{ emailError }}</div>
+    </div>
+    <div>
+        <label for="fullName"></label>
+        <input type="text" id="fullName" name="fullName" [(ngModel)]="fullName" placeholder="Họ và tên">
+    </div>
+    <div>
+        <label for="phone"></label>
+        <input type="text" id="phone" name="phone" [(ngModel)]="phone" placeholder="Số điện thoại">
+    </div>
+    <div>
+        <label for="address"></label>
+        <input type="text" id="address" name="address" [(ngModel)]="address" placeholder="Địa chỉ">
+    </div>
+    <div>
+        <label for="birthday"></label>
+        <input type="date" id="birthday" name="birthday" [(ngModel)]="birthday" placeholder="Ngày sinh">
+    </div>
+    <div>
+        <label for="password"></label>
+        <input type="password" id="password" name="password" required minlength="8"  [(ngModel)]="password"placeholder="Mật khẩu (bắt buộc, ít nhất 8 ký tự)">
+        <div *ngIf="passwordError" class="error">{{ passwordError }}</div>
+    </div>
+    <div>
+        <label for="confirmPassword"></label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" [(ngModel)]="confirmPassword"placeholder="Xác nhận mật khẩu (bắt buộc, giống mật khẩu)">
+        <div *ngIf="confirmPasswordError" class="error">{{ confirmPasswordError }}</div>
+    </div>
+    <p>Đã có tài khoản?. Nhấn <a [routerLink]="'/login'" routerLinkActive="active" href="">đăng nhập</a>!</p>
+    <div>
+        <button type="submit">Đăng ký</button>
+    </div>
+    </form>
+</div>
+</div>
+
+    

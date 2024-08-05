@@ -1,0 +1,15 @@
+
+<div class="row">
+    <div class="main-image col-lg-7 mb3">
+        <img id="largeImage" routerLink="chitiet"  [src]="selectedImage.image" alt="Main Image">
+        <p id="imageText" routerLink="chitiet" >{{ selectedImage.title }}</p>
+    </div>
+    <div class="thumbnails col-lg-5 mb-3">
+        @for (item of items; track $index) {
+            <div class="d-flex" >
+                <p class="limited-text" [routerLink]="'chitiet/' + item._id">{{ item.title }}</p>
+                <img class="thumbnail" [src]="item.image" alt="Thumbnail 1" (click)="changeImage(item)">
+            </div>
+        }
+    </div>
+</div>

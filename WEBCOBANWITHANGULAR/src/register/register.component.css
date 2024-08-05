@@ -1,0 +1,73 @@
+#body {
+    background: url('../assets/img/nenlogin&register.jpg');
+    background-size: cover;
+    background-position-y: -80px;
+    font-size: 16px;
+}
+#body1 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 1em;
+    border: 1px solid #282424;
+    border-radius: 1em;
+    background-color: rgba(50, 50, 50, 0.8);
+    box-shadow: 0px 0px 17px 2px rgba(60, 60, 60, 0.8);
+    flex-grow: 1;
+}
+
+h2 {
+    color: #fff;
+}
+div {
+    margin-bottom: 1em;
+}
+label {
+    margin-bottom: .5em;
+    color: #333333;
+    display: block;
+}
+input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    flex-grow: 1;
+    padding: .5em;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+#birthday {
+    color: #fff;
+}
+p {
+    margin-top: 30px;
+    font-size: 11px;
+}
+button {
+    background: transparent;
+    border: 1px solid #f5f5f5;
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out;
+    margin-top: 10px;
+}
+button:hover {
+    border: 1px solid #54a0ff;
+}
+.error {
+    color: red;
+    font-size: .875em;
+}

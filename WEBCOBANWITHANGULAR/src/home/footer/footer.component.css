@@ -1,0 +1,58 @@
+.footer {
+    background-color: #f3c85b;
+    text-align: center;
+    height: 100%;
+}
+.iconft {
+    padding-top: 20px;
+}
+.iconft i {
+    color: #211e1e;
+    width: 100%;
+    display: grid;
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}
+.iconft1 i {
+    color: #211e1e;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 24px;
+}
+.setbutton {
+    color: #4d4d13;
+    text-align: right;
+    padding: 10px;
+    width: 100px;
+}
+.setbutton button {
+    color: #111110;
+    border: none;
+    background-color: #8b5e34;
+    border-radius: 5px;
+    padding: 5px;
+}
+.line1 {
+    background-color: #111110;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 30px
+}
+.textft {
+    padding: 10px;
+}
+.tft {
+    width: 100%;
+}
+.textft .p1 {
+    text-align: left;
+    font-size: 15px;
+}
+
+.tft1 {
+    text-align: right;
+    font-size: 15px;
+    width: 100%;
+}

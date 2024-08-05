@@ -1,0 +1,21 @@
+.hostbox {
+    border: 1px solid #f3c85b;
+    border-radius: 5px;
+    padding: 10px;
+    color: #f3c85b;
+    display: flex;
+    
+}
+.hostbox a {
+    text-decoration: none;
+    color: #f3c85b;
+    width: 100%;
+    text-align: center;
+}   
+.sidebarimg img{
+    width: 100%;
+    margin: 0;
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+}

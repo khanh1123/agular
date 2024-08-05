@@ -1,0 +1,15 @@
+<swiper-container
+    class="mySwiper"
+    pagination="true"
+    pagination-clickable="true"
+    space-between="20"
+    [slidesPerView]="maxSlider"
+  >
+  @for (item of items1; track $index) {
+    <swiper-slide>
+      <img [src]="item.image" alt="" />
+      <p *ngIf="isTitle === true">{{ item.title }}</p>
+    </swiper-slide>
+    }
+  </swiper-container>
+  
