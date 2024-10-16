@@ -13,5 +13,12 @@ import { CaroselComponent } from '../../../../app/component/carosel/carosel.comp
 export class SecondComponent {
   @Input() maxSlider: number = 5
   @Input() sliderMaxFive: Array<{ title: string; image: string; _id: number }> = [];
+  [x: string]: any;
+  @Input() selectedImage: { title: string; image: string; _id: number } = {
+    image: '',
+    _id: 0,
+    title: '',
+  };
+  @Input() items: Array<{ title: string; image: string; _id: number }> = [];
 }
 

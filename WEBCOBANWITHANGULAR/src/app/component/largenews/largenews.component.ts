@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-largenews',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './largenews.component.html',
   styleUrl: './largenews.component.css',
 })
@@ -21,5 +22,6 @@ export class LargenewsComponent {
     author: '',
     createDate: '',
   };
-  @Input() title: string = 'Tin tức'
+  @Input() title: string = 'Tin tức mới'
+item: any;
 }

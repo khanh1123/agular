@@ -10,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppComponent {
-  title = 'WEBCOBANWITHANGULAR';
+  title = 'Chút Tin Sáng';
 }

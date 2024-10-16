@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="manage-container">
+  <h2>Quản Lý Tin Tức</h2>
+
+  <table class="news-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Tiêu đề</th>
+        <th>Danh mục</th>
+        <th>Tác giả</th>
+        <th>Ngày đăng</th>
+        <th>Trạng thái</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let news of newsList">
+        <td>{{ news._id }}</td>
+        <td>{{ news.title }}</td>
+        <td>{{ news.category }}</td>
+        <td>{{ news.author }}</td>
+        <td>{{ news.publishedDate }}</td>
+        <td>{{ news.status }}</td>
+        <td>
+          <button >Chi tiết</button>
+          <button >Duyệt</button>
+          <button >Từ chối</button>
+          <button >Xóa</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  <app-footer></app-footer>

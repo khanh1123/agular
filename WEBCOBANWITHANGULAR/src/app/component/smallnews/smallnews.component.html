@@ -2,7 +2,7 @@
     @for (item of items2; track $index) {
         <div class="d-flex" *ngIf="$index !== 0">
             <img class="imgsmallinthirdrow" [src]="item.image" alt="">
-            <p class="psmallinthirdrow">{{ item.title }}</p>
+            <p class="psmallinthirdrow" [routerLink]="'chitiet/' + item._id">{{ item.title }}</p>
         </div>
     }
 </div>

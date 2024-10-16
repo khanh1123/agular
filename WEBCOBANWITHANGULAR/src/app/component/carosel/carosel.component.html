@@ -7,8 +7,8 @@
   >
   @for (item of items1; track $index) {
     <swiper-slide>
-      <img [src]="item.image" alt="" />
-      <p *ngIf="isTitle === true">{{ item.title }}</p>
+      <img [src]="item.image" [routerLink]="'chitiet/' + item._id" alt="" />
+      <p *ngIf="isTitle === true" [routerLink]="'chitiet/' + item._id">{{ item.title }}</p>
     </swiper-slide>
     }
   </swiper-container>

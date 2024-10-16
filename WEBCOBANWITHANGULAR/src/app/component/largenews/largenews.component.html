@@ -3,8 +3,8 @@
     <i class="bi bi-brightness-alt-low-fill"></i>
 </div>
 <div class="mb-3"> 
-    <img class="imgthirdrow" [src]="data?.image" alt="">
-    <p class="pthirdrow mb-2">{{data?.title}}</p>
+    <img class="imgthirdrow" [src]="data?.image" [routerLink]="'chitiet/' + data?._id" alt="">
+    <p class="pthirdrow mb-2" [routerLink]="'chitiet/' + data?._id">{{data?.title}}</p>
     <div class="d-flex ngayvstacgia">
         <span><i class="bi bi-calendar-week"></i> {{data?.author}}</span>
         <span><i class="bi bi-person-fill"></i> {{data?.createDate}}</span>

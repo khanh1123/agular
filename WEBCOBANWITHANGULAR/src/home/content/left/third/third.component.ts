@@ -25,5 +25,15 @@ export class ThirdComponent {
     createDate: string;
   }[] = [];
 
-  title: string = "Sự kiện"
+  title1: string = "Sự kiện hot";
+  title2: string = "Tin trong nước";
+  title3: string = "Tin thế giới";
+
+  [x: string]: any;
+  @Input() selectedImage: { title: string; image: string; _id: number } = {
+    image: '',
+    _id: 0,
+    title: '',
+  };
+  @Input() items: Array<{ title: string; image: string; _id: number }> = [];
 }
